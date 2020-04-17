@@ -30,7 +30,7 @@ container.appendChild(img)
 textInput.textContent = params.text
 
 // Generate shareable link
-link.value = window.location.href.replace(window.location.origin, 'https://mems.joglr.dev')
+link.value = 'https://mems.joglr.dev' + '/share.html' + window.location.search
 const selectLink = () => link.select()
 link.onclick = selectLink
 
