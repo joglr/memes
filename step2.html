@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meme Generator</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="stepper">
+          <div class="step done">
+            <a class="step-title" href="./index.html">1. Vælg skabelon</a>
+          </div>
+          <div class="step current">
+            <span class="step-title">2. Tilføj tekst</span>
+          </div>
+          <div class="step">
+            <span class="step-title">3. Del!</span>
+          </div>
+        </div>
+        <h1>Tilføj tekst</h1>
+        <form action="share.html" id="form">
+          <section class="add-text" id="add-text">
+            <textarea
+              class="text-overlay"
+              placeholder="Skriv tekst her... 
+            
+            
+            
+                         Brug linjeskift      
+og mellemrum                                
+            
+                         til justering"
+              name="text"
+              id="text"
+            ></textarea>
+          </section>
+          <section>
+            <label for="color">Farve</label>
+            <input type="color" id="color" name="color" value="#ffffff"/>
+            <label for="size">Tekststørrelse</label>
+            <input type="range" id="size" name="size" min=50 value=100 max=150 />
+          </section>
+          <a class="button" href="./">⬅ Tilbage</a>
+          <button class="button primary" href="step3.html">Videre</button>
+        </form>
+      </div>
+    </div>
+    <script src="template.js"></script>
+    <script src="util.js"></script>
+    <script src="step2.js"></script>
+  </body>
+</html>

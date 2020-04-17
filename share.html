@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meme Generator</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container" id="container">
+        <div class="stepper">
+          <div class="step done">
+            <a class="step-title" href="./index.html" id="step1">1. Vælg skabelon</a>
+          </div>
+          <div class="step done">
+            <a class="step-title" href="./step2.html" id="step1">2. Tilføj tekst</a>
+          </div>
+          <div class="step current">
+            <span class="step-title">3. Del!</span>
+          </div>
+        </div>
+        <h1>Del!</h1>
+        <section class="add-text" id="add-text">
+          <textarea
+            class="text-overlay"
+            name="text"
+            disabled
+            id="text"
+          ></textarea>
+        </section>
+        <br/>
+        
+        <input id="link" 
+        >
+        <br/>
+        <button class="button primary" id="copy" href="step3.html">Kopier link</button>
+        <br />
+        <button
+          class="button"
+          id="edit"
+          onclick="window.location='step2.html'+window.location.search;"
+        >
+          Ret indhold
+        </button>
+      </div>
+    </div>
+    <script src="template.js"></script>
+    <script src="util.js"></script>
+    <script src="share.js"></script>
+  </body>
+</html>

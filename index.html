@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Jonas Glerup Røssum">
+    <meta name="revised" content="Jonas Glerup Røssum, 17-04-2020">
+    <meta name="description" content="Meme generators">  
+    <title>Meme Generator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="stepper">
+          <div class="step current">
+            <a class="step-title" href="./index.html">1. Vælg skabelon</a>
+          </div>
+          <div class="step">
+            <div class="step-title">2. Tilføj tekst</div>
+          </div>
+          <div class="step">
+            <div class="step-title">3. Del!</div>
+          </div>
+        </div>
+        <section style="text-align: center;">
+          <h1>Vælg en skabelon</h1>
+        </section>
+        <form action="step2.html" id="templateForm">
+          <section class="templates" id="templates">
+            Loading...
+          </section>
+          <section style="text-align: center;">
+            eller
+            <label
+              for="file"
+              class="button small"
+              role="button"
+              onclick="templateForm.reset()"
+            >
+              <span>
+                upload din egen
+              </span>
+            </label>
+            <input
+              type="file"
+              name="file"
+              id="file"
+              style="display: none;"
+            />
+          </section>
+        </form>
+      </div>
+    </div>
+    <script src="template.js"></script>
+      <script src="util.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
